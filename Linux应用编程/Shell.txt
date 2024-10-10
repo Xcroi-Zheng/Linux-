@@ -42,3 +42,92 @@ mv
 -n 不覆盖已有目标文件
 -i 覆盖时询问
 
+rm
+-f 强制删除
+-i 删除时询问
+-R 递推删除子目录和文件
+
+cat https://www.runoob.com/linux/linux-comm-cat.html
+
+tar
+-c 创建存档
+-x 提取存档
+-t 显示存档中的文件
+-f 指定存档名称
+-v 显示执行过程
+-z 同时使用gzip压缩文档
+
+gzip
+-d 解压缩
+-k 保留原文件
+-l 显示压缩文件内容
+-r 递推压缩子目录和文件
+
+passwd
+-d 删除用户密码
+-l 锁定用户，阻止登录
+-u 解锁用户
+
+usermod
+-c 账号说明
+-d 修改主目录
+-s 修改默认shell
+-g 修改主群组
+-G 修改附加群组
+-L 锁定用户，阻止登录
+-U 解锁用户
+
+deluser
+--group 删除用户组
+--remove-home 删除用户主目录
+--remove-all-files 删除系统中owner是该用户的所有文件
+
+chmod
+u 用户        + 增加权限          r 读权限
+g 用户组     - 删除权限          w 写权限
+o 其他用户 = 指定绝对权限   x 执行权限
+a 全部
+
+umask
+umask [八进制权限掩码]
+最终权限 = 默认权限码 - 权限掩码
+
+chown (change owner)
+name+FILE
+
+chgrp (change group)
+同上
+
+ln
+创建一个链接
+硬链接：创建一个具有相同inode编号的文件名
+符号链接：创建一个拥有独立inode的文件指向链接的文件
+-s 创建符号链接
+-f 强制创建链接（当链接名已被使用时）
+
+stat
+-f 查看文件系统属性
+
+touch
+修改文件时间戳，创建空文件
+-a 只改变访问时间
+-c 不创建文件
+-m 只改变修改时间
+-t 使用YYMMDDhhmm更新时间
+
+wc
+计算行数、字数和字符数
+-c 计算字符数
+-l 计算行数
+-w 计算字数
+
+find
+-name 按文件名查找
+-perm XXX 按权限查找
+-type f, d, l 按类型查找
+-user 按所有者查找
+-group 按用户组所有者查找
+-ctime -x +x 按创建时间查找
+
+
+
