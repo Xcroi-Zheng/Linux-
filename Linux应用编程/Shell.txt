@@ -1,0 +1,44 @@
+echo https://www.runoob.com/linux/linux-shell-echo.html
+-e 开启转义
+
+uname
+-a -all
+-s --kernel-name
+-n --nodename(network node hostname)
+-r --kernel-release
+
+who 
+-a --all             sign-in message
+-b --boot        last system boot time
+
+date
+-d --date=STRING      display STRING time
+-s --set=STRING         set STRING time
+
+ls
+-a 显示以.开头的文件
+-F 用*标记可执行文件，用/标记目录，用@标记符号链接
+-l 以列表形式显示文件属性
+-t 按最后修改时间排序（降序）
+-u 按最后访问时间排序
+-r 逆序排序
+-R 递推显示子目录和文件
+
+cd
+
+mkdir
+
+rmdir
+-p 删除空目录树
+
+cp
+-b 为已存在目标文件创建备份
+-n 不覆盖已有目标文件
+-i 覆盖时询问
+-R 递推复制子目录和文件
+
+mv
+-b 为已存在目标文件创建备份
+-n 不覆盖已有目标文件
+-i 覆盖时询问
+
