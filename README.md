@@ -1,1 +1,2 @@
-This is my first try
+这是Linux应用编程的学习仓库  
+可以随便添加
